@@ -18,7 +18,7 @@ public class Card {
     @Column(unique = true) //Valor tem que ser unico
     private String number;
 
-    @Column(name = "available_limit", scale = 13, precision = 2) //Precisão de dois decimais, e numeros antes da virgula com total de 13 caracteres
+    @Column(name = "available_limit", scale = 2, precision = 13) //Precisão de dois decimais, e numeros antes da virgula com total de 13 caracteres
     private BigDecimal limit;
 
 
